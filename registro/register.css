@@ -1,0 +1,76 @@
+/* Estilo general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f8f9fa;
+  margin: 0;
+}
+
+/* Caja central */
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  width: 500px;
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+/* Títulos */
+h2 {
+  margin: 10px 0;
+  font-size: 22px;
+  color: #222;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Roles en fila */
+.roles {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Tarjetas de rol */
+.role {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 25px 15px;
+  flex: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+/* Hover y efecto de selección */
+.role:hover {
+  transform: scale(1.05);
+  border-color: #28a745;
+  box-shadow: 0 6px 16px rgba(40,167,69,0.2);
+}
+
+/* Textos dentro de cada tarjeta */
+.role h3 {
+  margin: 8px 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.role p {
+  font-size: 13px;
+  color: #555;
+}

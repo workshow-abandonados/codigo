@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #a8d08d;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.header nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #d9ead3;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2d572c;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Servicios */
+.servicios {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.servicios .intro {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  background: #6aa84f;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px;
+}
+
+.footer a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+}
