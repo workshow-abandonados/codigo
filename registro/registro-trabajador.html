@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Trabajador</title>
+  <link rel="stylesheet" href="registro-trabajador.css">
+</head>
+<body>
+
+  <div class="container">
+    <img src="../imagenes/logo.jpeg" alt="WorkShow Logo" class="logo">
+    <h2>Registro de Trabajador</h2>
+    <p class="subtitle">Completa tu perfil profesional para empezar a ofrecer tus servicios.</p>
+
+    <form>
+      <h3>Información Personal</h3>
+      <div class="row">
+        <div>
+          <label>Nombre Completo</label>
+          <input type="text" placeholder="Tu nombre completo">
+        </div>
+        <div>
+          <label>Correo Electrónico</label>
+          <input type="email" placeholder="ejemplo@correo.com">
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Contraseña</label>
+          <input type="password" placeholder="Mínimo 8 caracteres">
+        </div>
+        <div>
+          <label>Confirmar Contraseña</label>
+          <input type="password" placeholder="Repite tu contraseña">
+        </div>
+      </div>
+
+      <h3>Detalles Profesionales</h3>
+      <div class="row">
+        <div>
+          <label>Profesión</label>
+          <select>
+            <option>Selecciona tu profesión</option>
+            <option>Carpintero</option>
+            <option>Electricista</option>
+            <option>Plomero</option>
+            <option>Técnico</option>
+          </select>
+        </div>
+        <div>
+          <label>Años de Experiencia</label>
+          <input type="number" placeholder="Ej: 5">
+        </div>
+      </div>
+
+      <label>Descripción Profesional</label>
+      <textarea placeholder="Describe tu experiencia y habilidades"></textarea>
+
+      <label>Zona de Trabajo</label>
+      <input type="text" placeholder="Ej: Ciudad de México, Colonia Roma">
+
+      <h3>Verificación de Documentos</h3>
+      <p class="small-text">Por favor adjunta tus documentos para verificar tu identidad y habilidades.</p>
+      <input type="file">
+
+      <div class="buttons">
+        <a href="../inicio.html" class="btn-back">Atrás</a>
+        <button type="submit" class="btn-submit">Registrarse</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
