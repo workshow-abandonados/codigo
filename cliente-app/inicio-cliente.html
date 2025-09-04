@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkShow Dashboard</title>
+  <link rel="stylesheet" href="inicio-cliente.css">
+
+  <!-- ✅ Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">WORKSHOW</div>
+    <nav class="menu">
+      <a href="#"><i class="bi bi-house-door"></i> Inicio</a>
+      <a href="/cliente-app/servicio.html"><i class="bi bi-briefcase"></i> Servicios</a>
+      <a href="#"><i class="bi bi-calendar-event"></i> Agenda</a>
+      <a href="#"><i class="bi bi-clock-history"></i> Historial</a>
+    </nav>
+    <div class="right-section">
+      <!-- barra de búsqueda -->
+      <input type="text" placeholder="Buscar servicios...">
+      <!-- iconos de agenda y mensajes -->
+      <div class="icons">
+        <i class="bi bi-chat-dots icon"></i>
+        <i class="bi bi-bell icon"></i>
+      </div>
+      <!-- perfil usuario -->
+      <div class="profile">
+        <i class="bi bi-person-circle"></i>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>¡Bienvenido de nuevo, XXXXX!</h1>
+
+    <!-- Servicios contratados -->
+    <section class="card">
+      <h2>Mis Servicios Contratados</h2>
+      <div class="service">
+        <img src="plomeria.png" alt="Reparación de Fugas">
+        <div class="service-info">
+          <h3>Reparación de Fugas</h3>
+          <p>Proveedor: Fontanero Express S.L.</p>
+        </div>
+        <span class="status activo">Activo</span>
+        <span class="date">2024-07-20</span>
+      </div>
+
+      <div class="service">
+        <img src="pintura.png" alt="Pintura de Habitación">
+        <div class="service-info">
+          <h3>Pintura de Habitación</h3>
+          <p>Proveedor: Pintores Modernos</p>
+        </div>
+        <span class="status pendiente">Pendiente</span>
+        <span class="date">2024-07-25</span>
+      </div>
+
+      
+    </section>
+
+    <!-- Categorías -->
+    <section class="card">
+      <h2>Explorar Categorías</h2>
+      <div class="categories">
+        <div class="category"><i class="bi bi-hammer"></i> Carpintería</div>
+        <div class="category"><i class="bi bi-building"></i> Construcción</div>
+        <div class="category"><i class="bi bi-brush"></i> Pintura</div>
+        <div class="category"><i class="bi bi-car-front"></i> Automotriz</div>
+        <div class="category"><i class="bi bi-heart"></i> Cuidado Animal</div>
+        <div class="category"><i class="bi bi-book"></i> Educación</div>
+        <div class="category"><i class="bi bi-egg-fried"></i> Cocina</div>
+        <div class="category"><i class="bi bi-lightning"></i> Electricidad</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
