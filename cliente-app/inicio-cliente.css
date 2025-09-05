@@ -1,3 +1,6 @@
+/* =========================
+   1) Reset & Base
+   ========================= */
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +18,9 @@ a {
   color: inherit;
 }
 
-/* Navbar */
+/* =========================
+   2) Barra de navegación (COMÚN)
+   ========================= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -34,9 +39,10 @@ a {
   margin: 0 10px;
   color: #333;
 }
-.menu i{
-   color:#28a745;
-  }
+
+.menu i {
+  color: #28a745;
+}
 
 .menu a:hover {
   color: #28a745;
@@ -57,7 +63,7 @@ a {
 .icons {
   display: flex;
   gap: 10px;
-  color:#28a745   
+  color: #28a745;
 }
 
 .icon {
@@ -73,7 +79,9 @@ a {
   cursor: pointer;
 }
 
-/* Contenido */
+/* =========================
+   3) Layout / Contenedores
+   ========================= */
 .container {
   max-width: 1000px;
   margin: 30px auto;
@@ -84,7 +92,11 @@ a {
   margin-bottom: 20px;
 }
 
-/* Tarjetas */
+/* =========================
+   4) Componentes
+   ========================= */
+
+/* ---- Tarjetas ---- */
 .card {
   background: #fff;
   padding: 20px;
@@ -93,7 +105,7 @@ a {
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* Servicios */
+/* ---- Servicios ---- */
 .service {
   display: flex;
   align-items: center;
@@ -117,6 +129,7 @@ a {
   flex: 1;
 }
 
+/* ---- Estados de servicio ---- */
 .status {
   padding: 5px 10px;
   border-radius: 12px;
@@ -139,11 +152,11 @@ a {
   color: #666;
 }
 
-/* Categorías */
+/* ---- Categorías ---- */
 .categories {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* más grandes y se ajustan */
-  gap: 20px; /* más espacio entre ellas */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
   margin-top: 15px;
 }
 
@@ -156,15 +169,15 @@ a {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s;
-  display: flex;              /* alineación ícono + texto */
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .category i {
-  font-size: 28px;   /* tamaño ícono */
-  color: #28a745;    /* color verde */
+  font-size: 28px;
+  color: #28a745;
   margin-bottom: 8px;
 }
 
@@ -175,5 +188,14 @@ a {
 }
 
 .category:hover i {
-  color: #1e7e34; /* verde más oscuro al pasar mouse */
+  color: #1e7e34;
 }
+
+.profile {
+  font-size: 19px;
+  color: #28a745;
+  cursor: pointer;
+}
+/* =========================
+   5) Fin del archivo
+   ========================= */

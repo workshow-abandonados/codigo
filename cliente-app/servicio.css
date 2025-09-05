@@ -1,82 +1,95 @@
+/* =========================
+   1) Base
+   ========================= */
 body {
   background-color: #f8f9fa;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-    /* --- Barra de navegación --- */
-    .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    .logo {
-    font-weight: bold;
-    font-size: 18px;
-    }
+/* =========================
+   2) Barra de navegación (COMÚN)
+   ========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
 
-    .menu a {
-    margin: 0 10px;
-    color: #333;
-    font-weight: 500;
-    }
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
 
-    .menu i {
-    margin-right: 6px;
-    color: #28a745; /* verde para los íconos */
-    }
+.menu a {
+  margin: 0 10px;
+  color: #333;
+  font-weight: 500;
+}
 
-    .menu a:hover {
-    color: #28a745;
-    }
+.menu i {
+  margin-right: 6px;
+  color: #28a745; /* verde para íconos */
+}
 
-    .right-section {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    }
+.menu a:hover {
+  color: #28a745;
+}
 
-    .right-section input {
-    padding: 6px 10px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    }
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-    .icons {
-    display: flex;
-    gap: 12px;
-    font-size: 20px;
-    color: #28a745;
-    }
+.right-section input {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
 
-    .icon {
-    cursor: pointer;
-    transition: color 0.3s;
-    }
+.icons {
+  display: flex;
+  gap: 12px;
+  font-size: 20px;
+  color: #28a745;
+}
 
-    .icon:hover {
-    color: #1e7e34;
-    }
+.icon {
+  cursor: pointer;
+  transition: color 0.3s;
+}
 
-    .profile {
-    font-size: 28px;
-    color: #28a745;
-    cursor: pointer;
-    }
+.icon:hover {
+  color: #1e7e34;
+}
 
-    .service-card {
-    border-radius: 12px;
-    transition: transform 0.2s ease-in-out;
-    }
+.profile {
+  font-size: 28px;
+  color: #28a745;
+  cursor: pointer;
+}
 
-    .service-card:hover {
-    transform: translateY(-5px);
-    }
+/* =========================
+   3) Servicios
+   ========================= */
+.service-card {
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+}
 
-    .profile-icon {
-    font-size: 60px;
-    color: #28a745;
-    }
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-icon {
+  font-size: 60px;
+  color: #28a745;
+}
