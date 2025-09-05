@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notificaciones</title>
+  <link rel="stylesheet" href="cliente-notificaciones.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- =========================
+       Barra de navegación (COMÚN)
+       ========================= -->
+  <nav class="navbar">
+    <div class="logo">WorkShow</div>
+    <div class="menu">
+      <a href="#"><i class="fas fa-home"></i>Inicio</a>
+      <a href="#"><i class="fas fa-cogs"></i>Servicios</a>
+      <a href="#"><i class="fas fa-history"></i>Historial</a>
+      <a href="#"><i class="fas fa-user"></i>Perfil</a>
+    </div>
+    <div class="right-section">
+      <input type="text" placeholder="Buscar...">
+      <div class="icons">
+        <i class="fas fa-bell icon"></i>
+        <i class="fas fa-envelope icon"></i>
+      </div>
+      <div class="profile"><i class="fas fa-user-circle"></i></div>
+    </div>
+  </nav>
+
+  <!-- =========================
+       Contenido principal
+       ========================= -->
+  <main class="container">
+    <h2>Notificaciones</h2>
+
+    <section class="card">
+      <div class="notification">
+        <div class="status green"></div>
+        <p><b>Juan Pérez</b> ha aceptado tu solicitud de servicio de Plomería. <span>hace 5 minutos</span></p>
+      </div>
+      <div class="notification">
+        <div class="status green"></div>
+        <p><b>Ana García</b> te ha calificado con 5 estrellas en el servicio de Electricidad. <span>hace 2 horas</span></p>
+      </div>
+      <div class="notification">
+        <div class="status blue"></div>
+        <p><b>Sistema WorkShow</b> Tienes 3 mensajes nuevos de diferentes clientes. <span>ayer</span></p>
+      </div>
+      <div class="notification">
+        <div class="status green"></div>
+        <p><b>Servicio de Jardinería</b> Tu cita ha sido confirmada para el martes. <span>hace 3 días</span></p>
+      </div>
+      <div class="notification">
+        <div class="status yellow"></div>
+        <p><b>Novedades de WorkShow</b> Nuevas funciones de chat disponibles. <span>hace 1 semana</span></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

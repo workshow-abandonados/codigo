@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Cliente</title>
+    <link rel="stylesheet" href="chat-cliente.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación (igual al resto de páginas) -->
+    <header class="navbar">
+        <div class="logo">WorkShow</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="historial-cliente.html">Historial</a></li>
+                <li><a href="perfil-cliente.html">Perfil</a></li>
+            </ul>
+        </nav>
+        <div class="user-menu">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-regular fa-user"></i>
+        </div>
+    </header>
+
+    <!-- Contenedor principal del Chat -->
+    <main class="chat-container">
+        
+        <!-- Encabezado del chat -->
+        <div class="chat-header">
+            <div class="user-info">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar Cliente">
+                <div>
+                    <h3>Ana García</h3>
+                    <span class="online-status">En línea</span>
+                </div>
+            </div>
+            <button class="end-service">Finalizar Servicio</button>
+        </div>
+
+        <!-- Área de mensajes -->
+        <div class="chat-messages">
+            <div class="message received">
+                <p>¡Hola! ¿Podrías confirmar la hora para la reparación del electrodoméstico mañana?</p>
+                <span class="time">14:30</span>
+            </div>
+            <div class="message sent">
+                <p>Hola, sí, la hora confirmada es a las 10:00 AM. Estaré allí a tiempo.</p>
+                <span class="time">14:31</span>
+            </div>
+            <div class="message received">
+                <p>Perfecto, gracias. ¿Necesitas alguna herramienta especial o repuesto que deba tener a mano?</p>
+                <span class="time">14:32</span>
+            </div>
+            <div class="message sent">
+                <p>No, tengo todo lo necesario. Solo asegúrate de que el área esté despejada para poder trabajar cómodamente.</p>
+                <span class="time">14:34</span>
+            </div>
+            <div class="message received">
+                <p>Entendido. ¿El presupuesto inicial de $50 sigue en pie?</p>
+                <span class="time">14:35</span>
+            </div>
+            <div class="message sent">
+                <p>Sí, a menos que haya complicaciones inesperadas, ese es el precio acordado.</p>
+                <span class="time">14:36</span>
+            </div>
+            <div class="message received">
+                <p>Excelente. Nos vemos mañana entonces, ¡gracias!</p>
+                <span class="time">14:37</span>
+            </div>
+        </div>
+
+        <!-- Input de mensaje -->
+        <div class="chat-input">
+            <button><i class="fa-solid fa-paperclip"></i></button>
+            <input type="text" placeholder="Escribe un mensaje...">
+            <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </main>
+
+</body>
+</html>

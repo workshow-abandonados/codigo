@@ -1,0 +1,82 @@
+/* =========================
+   1) Reset & Base
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* =========================
+   2) Barra de navegación (COMÚN)
+   ========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.logo { font-weight: bold; font-size: 18px; }
+.menu a {
+  margin: 0 10px;
+  color: #333;
+  font-weight: 500;
+}
+.menu a:hover { color: #28a745; }
+.menu i { margin-right: 6px; color: #28a745; }
+.right-section { display: flex; align-items: center; gap: 15px; }
+.right-section input {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.icons { display: flex; gap: 12px; font-size: 20px; color: #28a745; }
+.icon { cursor: pointer; transition: color 0.3s; }
+.icon:hover { color: #1e7e34; }
+.profile { font-size: 28px; color: #28a745; cursor: pointer; }
+
+/* =========================
+   3) Contenido principal
+   ========================= */
+.container { padding: 30px; }
+h2 { margin-bottom: 20px; }
+
+/* ---- Card ---- */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  border-bottom: 1px solid #eee;
+}
+.notification:last-child { border-bottom: none; }
+.notification p {
+  margin-left: 10px;
+  font-size: 14px;
+}
+.notification span {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+.status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.status.green { background: #28a745; }
+.status.blue { background: #007bff; }
+.status.yellow { background: #ffc107; }

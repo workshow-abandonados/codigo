@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edición de Perfil</title>
+  <link rel="stylesheet" href="edicion-perfilcliente.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- =========================
+       Barra de navegación (COMÚN)
+       ========================= -->
+  <nav class="navbar">
+    <div class="logo">WorkShow</div>
+    <div class="menu">
+      <a href="#"><i class="fas fa-home"></i>Inicio</a>
+      <a href="#"><i class="fas fa-cogs"></i>Servicios</a>
+      <a href="#"><i class="fas fa-history"></i>Historial</a>
+      <a href="#"><i class="fas fa-user"></i>Perfil</a>
+    </div>
+    <div class="right-section">
+      <input type="text" placeholder="Buscar...">
+      <div class="icons">
+        <i class="fas fa-bell icon"></i>
+        <i class="fas fa-envelope icon"></i>
+      </div>
+      <div class="profile"><i class="fas fa-user-circle"></i></div>
+    </div>
+  </nav>
+
+  <!-- =========================
+       Contenido principal
+       ========================= -->
+  <main class="container">
+    <h2>Edición de Perfil</h2>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active">Información General</button>
+      <button class="tab">Contraseña y Seguridad</button>
+      <button class="tab">Notificaciones</button>
+      <button class="tab">Servicios y Disponibilidad</button>
+    </div>
+
+    <!-- Formulario de edición -->
+    <section class="card">
+      <h3>Información General</h3>
+      <p>Actualiza tu información personal y detalles de contacto.</p>
+
+      <form class="form-grid">
+        <input type="text" placeholder="Nombre" value="Pedro">
+        <input type="text" placeholder="Apellido" value="Martínez">
+        <input type="email" placeholder="Correo Electrónico" value="pedro.martinez@example.com">
+        <input type="text" placeholder="Teléfono" value="+34 600 987 654">
+        <input type="text" placeholder="Dirección" value="Avenida Principal 456">
+        <input type="text" placeholder="Ciudad" value="Barcelona">
+      </form>
+
+      <div class="form-actions">
+        <button class="btn-secondary">Cancelar</button>
+        <button class="btn-primary">Guardar Cambios</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
